@@ -1,9 +1,23 @@
 import logo from './logo.svg';
 import './App.css';
-import Header from './components/Header/Header';
+import Header from './components/Layout/Header';
 import React from 'react';
 import Description from './components/Description/Description';
 import List from './components/List/List';
+
+function App() {
+  return (
+    <React.Fragment>
+      <Header />
+      {/* <Description />
+      <List items={items}/> */}
+    </React.Fragment>
+  );
+}
+
+export default App;
+
+
 const items = [
   {
     name: "Sushi-1",
@@ -22,14 +36,3 @@ const items = [
   },
 ]
 
-function App() {
-  return (
-    <div className="app">
-      <Header />
-      <Description />
-      <List items={items}/>
-    </div>
-  );
-}
-
-export default App;
