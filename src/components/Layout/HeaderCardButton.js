@@ -1,10 +1,10 @@
 import React from "react";
 import classes from "./HeaderCardButton.module.css";
-import CartIcon from "../Card/CartIcon";
+import CartIcon from "../Cart/CartIcon";
 
 const HeaderCardButton = (props) => {
   return (
-    <button className={classes.button}>
+    <button className={classes.button} onClick={props.onClick}>
       <span className={classes.icon}>
         <CartIcon />
       </span>
