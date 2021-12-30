@@ -50,6 +50,7 @@ const cartReducer = (state, action) => {
   }
   return defaultState;
 };
+
 const CartProvider = (props) => {
   const [cartState, despatchCartAction] = useReducer(cartReducer, defaultState);
   
